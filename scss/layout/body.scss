@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  color: $main-text-color;
+  background-color: $main-bg-color;
+  background-attachment: fixed;
+  span {
+    font-size: small;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .mensaje-header {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    color: $main-text-color;
+  }
+  @media (max-width: 350px) {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
