@@ -1,107 +1,183 @@
-.index {
-  .que-es {
-    background-color: $secondary-bg-color;
-    padding: 1px 180px;
-    width: 100%;
-    margin: 15px auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    h1 {
-      margin: 0;
-      color: $main-text-color;
-      text-align: center;
-    }
-    p {
-      margin-top: 12px;
-      text-align: center;
-    }
-    @media (max-width: 700px) {
-      padding: 1px 30px;
-      p {
-        text-align: justify;
-      }
-    }
+.about-wrapper {
+  @media screen and (min-width: 992px) {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .container-flex {
-    width: 100%;
+  .about-left {
+    background: #653860;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    .row {
-      .div-flex {
+    justify-content: center;
+    height: 100vh;
+    @media screen and (min-width: 992px) {
+      position: relative;
+      height: auto;
+    }
+    .about-left-content {
+      > div {
+        background: $other-bg-color;
+        padding: 4rem 4rem 2.5rem 5rem;
+        text-align: center;
+        @media (max-width: 420px) {
+          padding: 1rem 0.5rem 2.5rem;
+        }
+      }
+      box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+      -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+      -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+      h1 {
+        font-size: 2rem;
+        margin: 2.2rem 0 0.6rem 0;
+        line-height: 1.2;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #edffec;
+      }
+      h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 5px;
+        margin-top: 1.2rem;
+      }
+      @media screen and (min-width: 992px) {
+        position: absolute;
+        right: -50px;
+      }
+      .shadow {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        cursor: pointer;
+        &::after {
+          content: '';
+          position: absolute;
+          background: rgba(0, 0, 0, 0.4);
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -20px;
+          height: 7px;
+          width: 50px;
+          filter: blur(3px);
+          -webkit-filter: blur(3px);
+          opacity: 0;
+          transition: all 0.6s ease;
+        }
+        &:hover {
+          .about-img {
+            transform: translateY(-10px);
+          }
+          &::after {
+            opacity: 1;
+          }
+        }
+        .about-img {
+          img {
+            display: block;
+            width: 200px;
+          }
+          width: 200px;
+          height: 200px;
+          overflow: hidden;
+          border-radius: 50%;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+      .icons {
+        background: $main-bg-color;
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
-        margin-right: 0;
-        .card {
-          &.index-card {
-            width: 15rem;
-            height: 500px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            position: relative;
-          }
-          &.img-1 {
-            background-image: url('../images/Ingreso.jpg');
-          }
-          &.img-2 {
-            background-image: url('../images/home.jpg');
-          }
-          &.img-3 {
-            background-image: url('../images/buscador.jpg');
-          }
-          .transparent {
-            background-color: rgba(50, 9, 78, 0.617);
-            transition: all 400ms ease;
-            display: grid;
-            align-items: center;
-          }
-          .btn {
-            @extend .button;
-            display: none;
-          }
+        padding: 0.8rem 0;
+        li {
+          list-style-type: none;
+          background: $main-button-color;
+          color: $main-text-color;
+          width: 40px;
+          height: 40px;
+          margin: 0 0.5rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.2rem;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
           &:hover {
-            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-            .transparent {
-              margin-top: 100%;
-              .btn {
-                display: block;
-              }
-            }
+            background: $secondary-button-color;
+            color: $main-text-color;
+          }
+          a {
+            color: $main-text-color;
+            text-decoration: none;
           }
         }
       }
     }
   }
-  @include text-with-image-box(
-    $secondary-bg-color,
-    $secondary-bg-color,
-    200px,
-    false
-  );
-  .h-card {
-    img {
-      width: auto;
+  .about-right {
+    background: $another-bg-color;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+    @media (max-width: 420px) {
+      padding: 1rem 0.5rem;
+      height: auto;
     }
-    .text {
-      h3 {
-        margin: 10px 0 20px;
+    h3 {
+      font-size: 5rem;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      span {
         color: $main-text-color;
-        text-align: center;
+      }
+      @media (max-width: 420px) {
+        font-size: 3rem;
+      }
+    }
+    h4 {
+      font-weight: 600;
+    }
+    .about-para {
+      .about-btns {
+        margin: 2rem 0;
+        .btn {
+          border: none;
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          border: 2px solid #000;
+          border-radius: 20px;
+          padding: 0.55rem 0;
+          width: 130px;
+          font-weight: 600;
+          background: transparent;
+          margin: 0 0.5rem;
+          cursor: pointer;
+        }
+        .btn.btn-pink {
+          background: $main-button-color;
+          color: $main-text-color;
+          border-color: $secondary-button-color;
+          transition: all 0.5s ease-in-out;
+          width: 65%;
+          display: inline-block;
+          &:hover {
+            background: transparent;
+            border-color: $main-button-color;
+            color: $secondary-text-color;
+          }
+        }
       }
       p {
-        color: $main-text-color;
-        margin-right: 15px;
-        margin: 10px;
-        text-align: justify;
-      }
-      ul {
-        list-style: circle;
-        li {
-          margin-bottom: 2rem;
-          text-align: justify;
-        }
+        font-weight: 300;
+        padding: 0.5rem;
+        opacity: 0.8;
       }
     }
   }

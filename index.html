@@ -4,140 +4,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Presentación de mi proyecto Grandes Soluciones">
-  <meta name="keywords" content="grandes soluciones, usuarios mayores, adultos mayores, aplicacion bancaria">
+  <meta name="description"
+    content="Bienvenido a mi portafolio personal, descubre quién soy, mi enfoque en el diseño y descubre como le he dado vida a mis ideas.">
+  <meta name="keywords" content="quien soy, grandes soluciones, sobre mi, adultos mayores.">
   <script src="https://kit.fontawesome.com/295c00dc52.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="icon" href="./images/icono.png">
-  <title>Grandes Soluciones</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="../images/icono.png">
+  <title>¿Quién soy?</title>
 </head>
 
 <body>
   <header>
     <nav>
-      <input type="checkbox" id="check" />
+      <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fa-solid fa-bars"></i>
       </label>
       <a href="#" class="enlace">
-        <img src="./images/grandes-soluciones-logo.png" alt="Logotipo Grandes Soluciones" class="logo" />
+        <img src="../images/quien-soy-logo.png" alt="Logotipo Quién Soy" class="logo">
       </a>
       <ul>
-        <li><a class="active" href="#">Inicio</a></li>
-        <li>
-          <a href="./pages/sobreGrandesSoluciones.html">Sobre Grandes Soluciones</a>
-        </li>
+        <li><a class="active" href="#">¿Quién soy?</a></li>
         <li><a href="./pages/otrosProyectos.html">Otros proyectos</a></li>
-        <li><a href="./pages/quienSoy.html">¿Quién soy?</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
-  <main class="index">
-    <section class="que-es">
-      <h1>¿Qué es Grandes Soluciones?</h1>
-      <p>
-        Es una nueva aplicación que tiene como objetivo ayudar a los usuarios
-        mayores que utilizan aplicaciones bancarias. En ella, los usuarios
-        podrán obtener información sobre cómo realizar transferencias y
-        cambiar sus contraseñas de seguridad en cualquier banco. La aplicación
-        busca proporcionar a los usuarios asesoramiento cómodo sin necesidad
-        de acudir a una sucursal bancaria.
-      </p>
-    </section>
-    <section>
-      <div class="container-flex">
-        <div class="row">
-          <div class="col-12 col-md-4 col-xl div-flex">
-            <div class="card index-card img-1">
-              <div class="card-body transparent">
-                <div>
-                  <h2 class="card-title">Ingreso</h2>
-                  <p class="card-text text-center">
-                    Se observa una sección en la cual el usuario puede ingresar a su sesión o crearse una nueva.
-                  </p>
-                  <a href="./pages/sobreGrandesSoluciones.html#ingreso" class="btn">Ver más</a>
-                </div>
+  <main>
+    <div class="about-wrapper">
+      <div class="about-left">
+        <div class="about-left-content">
+          <div>
+            <div class="shadow">
+              <div class="about-img">
+                <img src="../images/foto-about-me-perfil.png" alt="Foto para el perfil">
               </div>
             </div>
+            <h1>Mariana Inés<br>Silvetti López</h1>
+            <h2>UX/UI Developer</h2>
           </div>
-          <div class="col-12 col-md-4 col-xl div-flex">
-            <div class="card index-card img-2">
-              <div class="card-body transparent">
-                <div>
-                  <h2 class="card-title">Inicio</h2>
-                  <p class="card-text text-center">
-                    En el inicio se encuentra la información relevante para el
-                    usuario, personalizada con sus preferencias.
-                  </p>
-                  <a href="./pages/sobreGrandesSoluciones.html#inicio" class="btn">Ver más</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-xl div-flex">
-            <div class="card index-card img-3">
-              <div class="card-body transparent">
-                <div>
-                  <h2 class="card-title">Buscador</h2>
-                  <p class="card-text text-center">
-                    Permite buscar tutoriales sobre aplicaciones bancarias y guardarlas para un rápido acceso.
-                  </p>
-                  <a href="./pages/sobreGrandesSoluciones.html#buscador" class="btn">Ver más</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="h-card">
-      <div class="content">
-        <div class="text">
-          <h3>Content prototype</h3>
-          <ul>
-            <li>
-              En esta sección se visualizaría la interacción del usuario con el bot de ayuda Cris.
-            </li>
-            <li>
-              Este cumple la función de responder las dudas que le surjan al usuario, guiándolo en la app y ofreciendo
-              posibles soluciones de manera
-              rápida y personalizada.
-            </li>
-            <li>
-              Dentro de estas respuestas puede brindar desde mensajes elaborados hasta videos tutoriales
-              extraidos de las compartidas por las entidades bancarias.
-            </li>
-            <li>
-              Todas las funcionalidades serían programadas en base a los research y entrevistas realizadas a los
-              posibles usuarios de la app, tratando de brindar siempre la mejor atención.
-            </li>
+          <ul class="icons">
+            <li><a href="https://www.instagram.com/mariana.silvetti.lopez/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mariana-ines-silvetti-lopez/" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.behance.net/marianasilvett " target="_blank"><i
+                  class="fa-brands fa-behance"></i></a></li>
           </ul>
-          <p>
-          </p>
-        </div>
-        <div class="img">
-          <img class="index-img" src="./images/chat-bot-chris.jpg" alt="Imagen ilustrativa sobre el chat bot" />
         </div>
       </div>
-    </section>
+      <div class="about-right">
+        <h3>¡Hola!</h3>
+        <h4>Conoce más sobre mí</h4>
+        <div class="about-para">
+          <div class="about-btns">
+            <a href="https://www.canva.com/design/DAFUMewWRzc/hG8GwRzQ9q5dPdGDWrxgWQ/view?utm_content=DAFUMewWRzc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              target="_blank" class="btn btn-pink">Ver Currículum</a>
+          </div>
+          <p>
+            Soy Mariana, pueden llamarme Marian, una apasionada del diseño UX/UI. Mi viaje en este campo es una aventura constante de
+            aprendizaje. Disfruto enfrentando desafíos que expanden mis habilidades y explorando nuevas tendencias. Creo
+            en la importancia de la colaboración y la retroalimentación para crecer profesionalmente. Fuera del diseño,
+            me encanta explorar nuevas tecnologías. Mi objetivo es inspirar a través de diseños centrados en el usuario
+            y estoy emocionada por el continuo crecimiento en este fascinante campo.</p>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="links-footer">
       <ul>
         <li>
-          <a href="./sobreGrandesSoluciones.html">Sobre Grandes Soluciones</a>
+          <a href="./index.html">¿Quién soy?</a>
         </li>
         <li>
-          <a href="./quienSoy.html">¿Quién soy?</a>
-        </li>
-        <li>
-          <a href="./otrosProyectos.html">Otros proyectos</a>
+          <a href="./pages/otrosProyectos.html">Otros proyectos</a>
         </li>
         <li>
           <span>Mis redes sociales</span>
