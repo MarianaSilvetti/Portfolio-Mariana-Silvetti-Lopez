@@ -347,6 +347,7 @@ footer .mensaje-footer {
   display: flex;
   justify-content: center;
   padding: 0.8rem 0;
+  border-radius: 0 0 10px 10px;
 }
 .about-wrapper .about-left .about-left-content .icons li {
   list-style-type: none;

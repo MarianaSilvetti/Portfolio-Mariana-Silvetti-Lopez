@@ -1,0 +1,105 @@
+.about-left-content {
+  > div {
+    background: $about-me-card-bg-hover;
+    padding: 2.5rem 4rem 1rem 5rem;
+    text-align: center;
+    height: 498px;
+    border-radius: 10px 10px 0 0;
+    @media (max-width: 420px) {
+      padding: 1rem 0.5rem 2.5rem;
+    }
+  }
+  border-radius: 10px;
+  width: 384px;
+  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  h1 {
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #edffec;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+  }
+  @media screen and (min-width: 992px) {
+    // position: absolute;
+    // right: -50px;
+  }
+  .shadow {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      background: rgba(0, 0, 0, 0.4);
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -20px;
+      height: 7px;
+      width: 50px;
+      filter: blur(3px);
+      -webkit-filter: blur(3px);
+      opacity: 0;
+      transition: all 0.6s ease;
+    }
+    &:hover {
+      .about-img {
+        transform: translateY(-10px);
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
+    .about-img {
+      img {
+        display: block;
+        width: 200px;
+      }
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .icons {
+    background: $main-bg-color;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    li {
+      list-style-type: none;
+      background: $main-button-color;
+      color: $main-text-color;
+      width: 40px;
+      height: 40px;
+      margin: 0 0.5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background: $secondary-button-color;
+        color: $main-text-color;
+      }
+      a {
+        color: $main-text-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
