@@ -65,8 +65,9 @@ p {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+    
     &-back {
+        font-family: $font;
         font-size: 1.25rem;
         text-align: center;
         display: grid;
@@ -78,9 +79,9 @@ p {
             rgba(188, 211, 233, 1) 50%,
             rgba(225, 168, 204, 1) 75%,
             rgba(176, 114, 225, 1) 100%
-        );
-        transform: rotateY(180deg);
-        div {
+            );
+            transform: rotateY(180deg);
+            div {
             // height: 100%;
             // padding: 32px;
             margin: 8px;

@@ -184,6 +184,7 @@ p {
   background-size: cover;
 }
 .flip-card-back {
+  font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   text-align: center;
   display: grid;
